@@ -1,7 +1,125 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-  background-color: white;
+    text-align: center;
+    padding: 150px 0;
+    font-size: 35px;
+    font-weight: 100px;
+    line-height: 1.4;
+    letter-spacing: .5rem;
+    color: #fefefe;
+    background-color: #39ff14;
+    font-family: 'Playfair Display', serif;
 }
 
 h1 {
-  color: #39ff14;
+  font-style: italic
+}
+
+h6 {
+  text-align: center;
+  color: #F67FAE;
+  background-color: #fefefe;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  letter-spacing: .12rem;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.content {
+  max-width: 1000px;
+  padding: 100px 30px;
+  margin: auto;
+  font-weight: normal;
+}
+
+.content body {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #39ff14;
+  color: #fefefe;
+  padding: 0px;
+  font-size: 30px;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .12rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fefefe;
+  min-width: 150px;
+  box-shadow: none;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #39ff14;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+h5 {
+  font-size: 20px;
+  color: #F67FAE;
+  letter-spacing: normal;
+  font-family: 'Petit Formal Script', cursive;
+}
+a:link {
+  color: #fefefe;
+}
+
+a:visited {
+  color: #fefefe;
+}
+
+
+footer {
+  position: fixed;
+  width:100%;
+  height: auto;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 250%;
+  font-weight: 700;
+  font-effect-neon
+  padding:0px;
+  bottom:0px;
+  color: #F67FAE;
+  font-style: italic;
+  background-color: #fefefe;
+  letter-spacing: 0rem;
 }
