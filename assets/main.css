@@ -112,9 +112,9 @@ a:visited {
 footer {
   position: fixed;
   width:100%;
-  height: auto;
+  max-height: 400px;
   font-family: 'Petit Formal Script', cursive;
-  font-size: 250%;
+  font-size: 200%;
   font-weight: 700;
   padding:0px;
   bottom:0px;
