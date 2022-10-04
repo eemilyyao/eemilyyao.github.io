@@ -1,0 +1,88 @@
+* {
+  padding: 0px;
+}
+
+body {
+  background-color: #000000;
+  padding: 0px;
+}
+
+div{
+
+}
+
+p {
+  font-family: 'Silkscreen', cursive;
+  font-size: 30px;
+  text-align: center;
+  color: #fefefe;
+}
+
+p:hover{
+  color: red;
+}
+
+
+h1{
+  font-family: 'Silkscreen', cursive;
+  font-size: 18px;
+  text-align: center;
+  color: #fefefe;
+}
+
+h1:hover{
+  color: red;
+}
+
+.red {
+  color: red;
+}
+
+.correct {
+  z-index: 1
+  margin: 2px;
+  width:70px;
+  height: 70px;
+  padding: 10px;
+  display: inline-block;
+  font-family: 'Silkscreen', cursive;
+  font-size: 100px;
+  color: #fefefe;
+}
+
+.correct:hover ~.letter{
+  color: #000000;
+
+}
+
+.correct:hover ~.show{
+   opacity: 1%;
+}
+
+.show{
+  margin: 2px;
+  width:70px;
+  height: 70px;
+  padding: 10px;
+  display: inline-block;
+  font-family: 'Silkscreen', cursive;
+  font-size: 100px;
+  color: #fefefe;
+  transition: 3s;
+  transition-delay: 0.5s;
+}
+
+.letter{
+  margin: 2px;
+  width:70px;
+  height: 70px;
+  padding: 10px;
+  display: inline-block;
+  font-family: 'Silkscreen', cursive;
+  font-size: 100px;
+  color: #fefefe;
+}
+
+.letter:hover {
+  color: red;
+}

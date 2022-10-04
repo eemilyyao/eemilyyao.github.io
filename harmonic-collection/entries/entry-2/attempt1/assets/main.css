@@ -1,0 +1,72 @@
+* {
+  padding: 0px;
+  margin-left: 45px;
+  margin-top: 10px;
+}
+
+body {
+  background-color: #fefefe;
+  padding: 0px;
+}
+
+.parent {
+
+}
+
+.onerock img {
+
+}
+
+.rock1:hover {
+  display: block;
+  background: #fefefe;
+}
+
+.rocks {
+  opacity: 10%;
+}
+
+
+.rock1
+.rock2
+.rock3
+.rock4
+.rock5
+
+
+.txt1:hover {
+  
+}
+
+.txt1
+.txt1
+.txt1
+.txt1
+
+
+
+img {
+  position: absolute;
+  width: 600px;
+  height: auto;
+}
+
+.text {
+  float: inherit;
+  position: relative;
+  padding-left: 800px;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 40px;
+}
+
+h2:hover .onerock{
+  transform: scale(2%);
+}

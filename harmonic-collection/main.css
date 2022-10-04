@@ -26,6 +26,10 @@ body {
   cursor: pointer;
 }
 
+div{
+  float: left;
+  white-space: nowrap;
+}
 h1 {
   font-size: 150px;
 }
