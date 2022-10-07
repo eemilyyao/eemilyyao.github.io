@@ -86,3 +86,12 @@ h1:hover{
 .letter:hover {
   color: red;
 }
+
+.link {
+  position: relative;
+  text-align: center;
+  font-family: 'Silkscreen', cursive;
+  font-size: 12px;
+  color: #fefefe;
+  padding-bottom: 20px;
+}

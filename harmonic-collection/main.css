@@ -44,8 +44,7 @@ a:visited {
 
 h5 {
   position: absolute;
-        top: 50px;
-        right: 50px;
+  top: 50px;
   font-size: 25px;
-  text-align: right;
+  align: left;
 }
