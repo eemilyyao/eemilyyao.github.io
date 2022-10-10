@@ -14,8 +14,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Ftook';
-    src: url(Ftoonk-Regular.ttf) format('truetype');
+    font-family: 'Killara';
+    src: url(Killara.ttf) format('truetype');
 }
 
 .basic {
@@ -36,13 +36,13 @@ h1 {
 
 p {
   text-align: left;
-  color: #FFBCD9 ;
+  color: #fefefe ;
   font-size: 100px;
-  font-family: 'Ftook';
+  font-family: 'Killara';
   padding-left: 100px;
   padding-top: 60px;
   letter-spacing: .5rem;
-  -webkit-text-stroke: 2px #fefefe;
+  -webkit-text-stroke: 1px #Fefefe;
 }
 
 h3 {
