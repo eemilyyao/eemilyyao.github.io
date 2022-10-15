@@ -1,0 +1,328 @@
+body {
+  background: #FFFBF2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url(Butler_Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'ButlerMed';
+    src: url(Butler_Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'ButlerBold';
+    src: url(Butler_Bold.otf) format('opentype');
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  font-family: 'Butler';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 43px;
+  color: #4E2A1B;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.vanilla {
+  width: 20vw;
+  height: auto;
+  border-radius: 200px;
+}
+
+.alltext {
+  box-sizing: border-box;
+  margin: auto;
+  width: 60vw;
+  height: auto;
+  border: 1px solid #35190C;
+  margin-bottom: 100px;
+}
+
+.columns {
+  column-count: 4;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  column-width: inherit;
+  padding: 0px 20px;
+}
+
+.info {
+  font-family: 'Butler';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #35190C;
+  width: auto;
+  height: 37px;
+  padding: auto;
+}
+
+.bold {
+  font-family: 'ButlerBold';
+}
+
+.textblock {
+  line-height: 22px;
+  text-align: justify;
+  position: relative;
+  padding: 0px 20px;
+}
+
+p {
+  color: #35190C;
+}
+
+h3 {
+  font-family: 'ButlerMed';
+  font-size: 14px;
+  color: #35190C;
+}
+
+.text {
+  font-family: 'Butler';
+  font-style: normal;
+  font-size: 18px;
+}
+
+.subsec {
+  font-family: 'ButlerBold';
+  font-size: 20px;
+}
+
+li {
+  font-family: 'Butler';
+  font-style: normal;
+  font-size: 18px;
+  color: #35190C;
+}
+
+ul {
+  padding-left: 10px;
+}
+
+ol {
+  padding-left: 10px;
+}
+
+.note {
+  font-family: 'ButlerBold';
+  font-size: 25px;
+}
+
+a {
+  color: #35190C;
+}
+
+a visited {
+  color: #35190C;
+}
+
+.link {
+  position: relative;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Butler';
+  font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+
+  .alltext {
+    margin: auto;
+    width: 60vw;
+    height: auto;
+    margin-bottom: 100px;
+    border: none;
+    background-color: rgba(199, 183, 151, 0.3);
+    padding-bottom: 10px;
+  }
+
+  .text {
+    font-family: 'Butler';
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  h2 {
+    position: relative;
+    text-align: center;
+    font-family: 'Butler';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: #4E2A1B;
+  }
+
+  .note {
+    font-family: 'ButlerBold';
+    font-size: 22px;
+  }
+
+  .textblock {
+    line-height: 24px;
+    text-align: justify;
+    position: relative;
+    padding: 0px 10px;
+  }
+
+  .info {
+    font-family: 'Butler';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #35190C;
+    width: auto;
+    height: 37px;
+    padding: auto;
+  }
+  .columns {
+    column-count: 4;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-width: inherit;
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .alltext {
+    margin: auto;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 100px;
+    border: none;
+    background-color: #35190C;
+  }
+
+  p {
+    color: #FFFBF2;
+  }
+
+  .bottomimg {
+    display: none;
+  }
+
+  .text {
+    font-family: 'Butler';
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  h2 {
+    position: relative;
+    text-align: center;
+    font-family: 'Butler';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    color: #4E2A1B;
+  }
+
+  li {
+    font-family: 'Butler';
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFBF2;
+  }
+
+  h3 {
+  color: #FFFBF2;
+  }
+
+  .vanilla {
+    width: 32vw;
+    height: auto;
+    border-radius: 97px;
+  }
+
+  .note {
+    font-family: 'ButlerBold';
+    font-size: 22px;
+  }
+
+  .textblock {
+    line-height: 20px;
+    text-align: justify;
+    position: relative;
+    padding: 0px 10px;
+  }
+
+  .info {
+    font-family: 'Butler';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FFFBF2;
+    width: auto;
+    height: 37px;
+    padding: auto;
+  }
+  .columns {
+    column-count: 4;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-width: inherit;
+    padding: 0px 10px;
+  }
+
+  a {
+    color: #FFFBF2;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .vanilla {
+    width: 35vw;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  .text {
+    font-family: 'Butler';
+    font-style: normal;
+    font-size: 14px;
+  }
+
+  h3 {
+  color: #FFFBF2;
+  font-size: 10px;
+  }
+
+  h2 {
+    position: relative;
+    text-align: center;
+    font-family: 'Butler';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    color: #4E2A1B;
+  }
+
+  a {
+    color: #FFFBF2;
+  }
+
+}
