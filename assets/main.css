@@ -3,52 +3,67 @@
     margin: 0px;
 }
 
+html, body {
+height: 100%;
+  overflow-x:hidden;
+}
+
 body {
-  background: no-repeat radial-gradient(#e66465, #9198e5);
-  min-height: 150vh;
+  background: no-repeat linear-gradient(#ECFFDC,#20c959,#023020);
 }
 
 @font-face {
-    font-family: 'Arsenica';
-    src: url(ArsenicaTrial-Regular.ttf) format('truetype');
+    font-family: 'Butter';
+    src: url(Butter.otf) format('opentype');
 }
 
 @font-face {
-    font-family: 'Killara';
-    src: url(Killara.ttf) format('truetype');
+    font-family: 'Inter';
+    src: url(Inter.ttf) format('truetype');
 }
 
-.basic {
-  padding-top: 100px;
-  text-align: left;
-  line-height: 1.4;
-  letter-spacing: .5rem;
-  color: #fefefe;
-  font-family: 'Arsenica', serif;
-  padding-left: 600px;
-
+.circle {
+  background-color:transparent;
+  border:3px solid #fefefe;
+  height:1100px;
+  width: 900px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  position:fixed;
+  right: -200px;
+  top:-200px;
 }
 
-h1 {
-  font-family: 'Arsenica', serif;
-  font-size: 100px;
-}
-
-p {
-  text-align: left;
+.name {
+  text-align: right;
   color: #fefefe ;
-  font-size: 100px;
-  font-family: 'Killara';
-  padding-left: 100px;
-  padding-top: 60px;
-  letter-spacing: .5rem;
-  -webkit-text-stroke: 1px #Fefefe;
+  font-size: 50px;
+  font-family: 'Butter';
+  padding-right: 50px;
+  padding-top: 20px;
+  letter-spacing: auto;
+  border:3px solid #fefefe;
+  height:70px;
+  width: 350px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  position:fixed;
+  right: 400px;
+  top: 100px;
 }
 
 h3 {
   letter-spacing: .2rem;
-  font-size: 30px;
-  font-family: 'Arsenica', serif;
+  font-size: 25px;
+  font-family: 'Inter', serif;
+}
+
+.topics {
+  font-family: 'Butter';
+  color: #fefefe;
+  font-size: 80px;
 }
 
 /* Dropdown Button */
@@ -59,14 +74,28 @@ h3 {
   border: none;
   background-color: Transparent;
   background-repeat:no-repeat;
-  font-family: 'Arsenica', serif;
+  font-family: 'Inter', serif;
   letter-spacing: .15rem;
+}
+
+.harmonic{
+  padding-top: 10px;
+  letter-spacing: .2rem;
+  font-size: 25px;
+  font-family: 'Inter', serif;
+}
+
+.basic {
+  left:30px;
+  top: 200px;
+  position: relative;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
+  padding-right: 50px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -105,7 +134,7 @@ h3 {
 h5 {
   font-size: 20px;
   letter-spacing: normal;
-  font-family: 'Arsenica', serif;
+  font-family: 'Inter', serif;
   color: #F67FAE;
 }
 
@@ -119,15 +148,25 @@ a:visited {
   text-decoration: none;
 }
 
-#turn {
-  transform: rotate(-90deg) translateY(-50px) translateX(150px);
-  text-align:left;
-  vertical-align: bottom;
-  position: absolute;
-  color: #fefefe;
+.small {
+  font-family: 'Butter', serif;
+  font-size: 170px;
 }
 
-.container {
-  column-count: 2;
-  padding-right: 500px;
+.core {
+  font-family: 'Butter', serif;
+  font-size: 300px;
+  color: #fefefe;
+  vertical-align: text-bottom;
+  position:fixed;
+  bottom: 0px;
+  left: 20px;
+  line-height: 0.8;
+  display: inline-block;
+}
+
+.inline {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 650px;
 }
