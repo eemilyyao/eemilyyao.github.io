@@ -1,0 +1,108 @@
+body {
+  padding-top: 50px;
+  background: no-repeat radial-gradient(#77aaff, #ffc0eb, #77ff88, #77aaff, #ffc0eb);
+  min-height: 150vh;
+}
+
+@font-face {
+    font-family: 'Buttershine';
+    src: url(Buttershine.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Royalacid';
+    src: url(royalacid_o.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Royalacid1';
+    src: url(royalacid.ttf) format('truetype');
+}
+
+.july {
+  font-size: 100px;
+  text-align: center;
+  color: #fefefe;
+  font-family: 'Royalacid';
+  text-decoration: underline;
+}
+
+.instructions {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Buttershine';
+  font-size: 40px;
+  color: #fefefe;
+}
+
+.month {
+  max-width: 950px;
+  margin: auto;
+
+}
+
+.week {
+  height: 120px;
+  color: #fefefe;
+  display: flex;
+}
+
+.week:first-of-type .day:first-of-type {
+  margin-left: 14.285%;
+}
+
+.week:last-of-type .day:last-of-type {
+  margin-right: 42.85714%;
+}
+
+.day {
+  color: #fefefe;
+  font-size: 100px;
+  font-family: 'Buttershine';
+  text-align: center;
+  padding-top: 0px;
+  margin-top:15px;
+  background-color: #ffddfb;
+  box-shadow:
+    -2px -2px #fefefe,
+    inset -2px -2px 0 0 #fefefe;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.day1 {
+  color: #fefefe;
+  font-size: 100px;
+  font-family: 'Buttershine';
+  text-align: center;
+  padding-top: 0px;
+  margin-top:15px;
+  background-color: #ffddfb;
+  box-shadow:
+    -2px -2px #fefefe,
+    inset -2px -2px 0 0 #fefefe;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+
+.day:hover {
+  color: transparent;
+  background-color: transparent;
+}
+
+.day1:hover {
+  color: transparent;
+  background-color: transparent;
+}
+
+.day:hover ~.day1{
+  color: transparent;
+  background-color: transparent;
+}

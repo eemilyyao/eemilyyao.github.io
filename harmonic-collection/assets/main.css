@@ -1,0 +1,106 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'NewYork';
+    src: url(NewYork.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Alight';
+    src: url(Alight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Abold';
+    src: url(Abold.ttf) format('truetype');
+}
+
+body {
+    text-align: left;
+    padding-left: 100px;
+    letter-spacing: .5rem;
+    color: #fefefe;
+    background-color: #000000;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.point {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 20px;
+  color: #fefefe;
+  padding-top: 20px;
+}
+
+.alternate {
+  cursor: default;
+}
+
+.alternate:nth-child(odd) {
+  color: #000000;
+  transition: all 2s linear;
+  cursor: default;
+}
+
+.alternate:nth-child(odd):hover {
+  background-color: #fefefe;
+  cursor: default;
+}
+
+.entries {
+  color: #fefefe;
+  float: right;
+  text-align: right;
+  position: absolute;
+  top: 250px;
+  right: 100px;
+  line-height: 50px;
+}
+
+.entry {
+  font-size: 50px;
+  position: relative;
+  color: transparent;
+}
+
+.entry:hover {
+  color: #fefefe;
+  transition: all 1s linear;
+}
+
+h1 {
+  font-size: 175px;
+  font-weight: 100px;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 175px;
+  font-weight: 100px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+a:link {
+  color: #fefefe;
+}
+
+a:visited {
+  color: #fefefe;
+}
+
+h5 {
+  text-align: left;
+  font-size: 40px;
+  padding-top: 80px;
+  font-family: 'Abold';
+}
+
+.note {
+  font-family: 'Alight';
+  font-size: 20px;
+  letter-spacing: .3rem;
+  padding-left: 20px;
+}
