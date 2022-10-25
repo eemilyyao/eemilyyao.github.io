@@ -23,7 +23,8 @@ body {
     padding-left: 100px;
     letter-spacing: .5rem;
     color: #fefefe;
-    background-color: #000000;
+    background: no-repeat linear-gradient(#1c0098,#000000,#070058,#000000,#7d12ff);
+    min-height: 150vh;
     font-family: 'Archivo Black', sans-serif;
 }
 
@@ -39,13 +40,13 @@ body {
 }
 
 .alternate:nth-child(odd) {
-  color: #000000;
+  color: transparent;
   transition: all 2s linear;
   cursor: default;
 }
 
 .alternate:nth-child(odd):hover {
-  background-color: #fefefe;
+  color: #fefefe;
   cursor: default;
 }
 
