@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+html, body {
+  height: 100%;
+}
+
 @font-face {
     font-family: 'NewYork';
     src: url(NewYork.otf) format('opentype');
@@ -18,13 +22,17 @@
     src: url(Abold.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Butter';
+    src: url(butter.otf) format('opentype');
+}
+
 body {
     text-align: left;
-    padding-left: 100px;
+    padding-left: 30px;
     letter-spacing: .5rem;
     color: #fefefe;
-    background: no-repeat linear-gradient(#1c0098,#000000,#070058,#000000,#7d12ff);
-    min-height: 150vh;
+    background: #000000;
     font-family: 'Archivo Black', sans-serif;
 }
 
@@ -94,9 +102,9 @@ a:visited {
 
 h5 {
   text-align: left;
-  font-size: 40px;
-  padding-top: 80px;
-  font-family: 'Abold';
+  font-size: 30px;
+  padding-top: 50px;
+  font-family: 'Archivo Black';
 }
 
 .note {
