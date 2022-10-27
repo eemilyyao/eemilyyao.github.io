@@ -1,8 +1,14 @@
+html, body {
+  height: 100%;
+  overflow-x:hidden;
+}
+
 body {
   padding-top: 50px;
   background: no-repeat radial-gradient(#77aaff, #ffc0eb, #77ff88, #77aaff, #ffc0eb);
-  min-height: 150vh;
 }
+
+
 
 @font-face {
     font-family: 'Buttershine';
