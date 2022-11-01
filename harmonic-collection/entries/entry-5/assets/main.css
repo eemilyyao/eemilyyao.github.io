@@ -20,11 +20,6 @@ body {
     src: url(royalacid_o.ttf) format('truetype');
 }
 
-@font-face {
-    font-family: 'Royalacid1';
-    src: url(royalacid.ttf) format('truetype');
-}
-
 .july {
   font-size: 100px;
   text-align: center;
