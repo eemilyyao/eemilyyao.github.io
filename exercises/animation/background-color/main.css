@@ -1,0 +1,22 @@
+body {
+    animation: change-color 1s infinite;;
+    animation-direction: alternate;
+}
+
+@keyframes change-color {
+   0% {
+    background-color: #77aaff;
+  }
+  25% {
+    background-color: #99ccff;
+  }
+  50% {
+    background-color: 	#bbeeff;
+  }
+  75% {
+    background-color: 	#5588ff;
+  }
+  100% {
+    background-color: #3366ff;
+  }
+}

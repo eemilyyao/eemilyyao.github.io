@@ -1,0 +1,20 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    background-color: #77aaff;
+}
+
+.square {
+    background-color: white;
+    height: 595px;
+    width: 595px;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    animation: crescendo 1.5s alternate infinite ease-in;
+}
+
+@keyframes crescendo {
+  0%   {transform: scale(.8);}
+  100% {transform: scale(1.5);}
+}

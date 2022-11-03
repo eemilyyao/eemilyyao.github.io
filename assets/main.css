@@ -101,7 +101,6 @@ h3 {
 .dropdown {
   position: relative;
   display: inline-block;
-  padding-right: 50px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -175,5 +174,5 @@ a:visited {
 .inline {
   display: inline-flex;
   justify-content: space-between;
-  width: 650px;
+  width: 850px;
 }

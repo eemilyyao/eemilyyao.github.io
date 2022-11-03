@@ -1,0 +1,28 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    background-color: #3366ff;
+}
+
+.square {
+    background-color: white;
+    height: 595px;
+    width: 595px;
+    position: absolute;
+    left: 600px;
+    top: 200px;
+    animation: change 1.5s alternate infinite ease-in;
+    border-radius: 0%;
+}
+
+@keyframes change {
+  0% {
+    border-radius: 0%;
+}
+60% {
+    border-radius: 25%;
+}
+100% {
+  border-radius: 50%;
+
+}

@@ -1,0 +1,26 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    background-color: #bbeeff;
+}
+
+.square {
+    background-color: white;
+    height: 595px;
+    width: 595px;
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    animation: change 2s alternate infinite ease-in;
+    border-radius: 50%
+}
+
+@keyframes change {
+0% {
+    left:100px;
+}
+
+100% {
+  left: 1000px;
+  opacity: 0%;
+}

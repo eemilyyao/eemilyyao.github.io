@@ -1,0 +1,536 @@
+html, body {
+  height: 100%;
+  overflow-x:hidden;
+}
+
+body {
+  padding: 50px 10vw;
+  background-color: #000000;
+}
+
+.bubble {
+  position: relative;
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  width: 650px;
+  background: #fff;
+  border-radius: 145px;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 50px;
+  bottom: -24px;
+}
+
+.bubble2 {
+  position: relative;
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  width: 450px;
+  background: #fff;
+  border-radius: 150px;
+  padding: 24px;
+  margin-top: 15px;
+  text-align: center;
+  color: #000;
+  float: right;
+}
+
+.bubble2-bottom-right:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-right: 24px solid #fff;
+  border-left: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  right: 50px;
+  bottom: -24px;
+}
+
+.bubble3 {
+  position: relative;
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  width: 300px;
+  background: #fff;
+  border-radius: 145px;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+  margin-top: 120px;
+}
+
+.bubble3-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 50px;
+  bottom: -24px;
+}
+
+.puzzle:hover .puzzle-left {
+  animation-play-state: running;
+}
+
+.puzzle:hover .puzzle-right {
+  animation-play-state: running;
+}
+
+.puzzle:hover .puzzle-right-lower {
+  animation-play-state: running;
+}
+
+.puzzle:hover .puzzle-left-lower {
+  animation-play-state: running;
+}
+
+.puzzle * {
+  position: absolute;
+}
+
+.puzzle {
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  margin-top: 5%;
+  transform: translateY(70%);
+  transform: scale(1.5);
+  top: 50%;
+  left: 50%;
+}
+
+.puzzle-left {
+  height: 25%;
+  width: 25%;
+  border: 2px solid;
+  top: 0;
+  left: 0;
+  background-color: #8cd3ff;
+  //box-shadow: 10px 10px 0px #e8e3e7;
+  animation-name: move-left;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  z-index: 1;
+}
+
+  @keyframes move-left {
+    0% { top: 37%; left: 37%; transform: translate(-50%, -50%); }
+    100% { top: 0%; transform: translateY(0%); }
+  }
+
+.puzzle-right {
+  height: 25%;
+  width: 25%;
+  border: 2px solid;
+  top: 0;
+  right: 0;
+  background-color: 	#fffcc0;
+  //box-shadow: 10px 10px 0px #e8e3e7;
+  animation-name: move-right;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+  @keyframes move-right {
+    0% { top: 37%; right: 37%; transform: translate(50%, -50%); }
+    100% { top: 0%; transform: translateY(0%); }
+  }
+
+.puzzle-left-lower {
+  height: 25%;
+  width: 25%;
+  border: 2px solid;
+  bottom: 0;
+  left: 0;
+  background-color: #a6dca3;
+  //box-shadow: 10px 10px 0px #e8e3e7;
+  animation-name: move-left-up;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+  @keyframes move-left-up {
+    0% { bottom: 37%; left: 37%; transform: translate(-50%, 50%); }
+    100% { bottom: 0%; transform: translateY(0%); }
+  }
+
+.puzzle-right-lower {
+  height: 25%;
+  width: 25%;
+  border: 2px solid;
+  bottom: 0;
+  right: 0;
+  background-color: #ffcaec;
+ // box-shadow: 10px 10px 0px #e8e3e7;
+  animation-name: move-right-up;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  z-index: -1;
+}
+
+  @keyframes move-right-up {
+    0% { bottom: 37%; right: 37%; transform: translate(50%, 50%); }
+    100% { bottom: 0%; transform: translateY(0%); }
+  }
+
+.puzzle-left-right {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  top: 50%;
+  right: -28%;
+  transform: translateY(-50%);
+  border-left-color: transparent;
+  background-color: #8cd3ff;
+  //box-shadow: 10px 10px 0px #e8e3e7;
+}
+
+.puzzle-left-bottom {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  left: 50%;
+  bottom: -28%;
+  transform: translateX(-50%);
+  border-top-color: transparent;
+  background-color: #8cd3ff;
+  //box-shadow: 10px 10px 0px #e8e3e7;
+}
+
+.puzzle-right-right {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  top: 50%;
+  right: -7%;
+  transform: translateY(-50%);
+  border-right-color: transparent;
+  background-color: #000000;
+}
+
+.puzzle-right-right::before {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #e8e3e7;
+  //content: "";
+  position: absolute;
+  bottom: 0%;
+  right: -10%;
+  border-right: 2px solid #e8e3e7;
+}
+
+.puzzle-right-right::after {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #000000;
+  //content: "";
+  position: absolute;
+  bottom: -50%;
+  right: -100%;
+  border-right: 2px solid #000000;
+}
+
+.puzzle-right-left {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  top: 50%;
+  left: -8%;
+  transform: translateY(-50%);
+  border-left-color: transparent;
+  background-color: #000000;
+}
+
+.puzzle-right-bottom {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  left: 50%;
+  bottom: -28%;
+  transform: translateX(-50%);
+  border-top-color: transparent;
+  background-color:	#fffcc0;
+  //box-shadow: 10px 10px 0px #e8e3e7;
+}
+
+.puzzle-right-top {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  top: -28%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: transparent;
+  background-color:	#fffcc0;
+}
+
+.puzzle-left-lower-right {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  top: 50%;
+  right: -28%;
+  transform: translateY(-50%);
+  border-left-color: transparent;
+  background-color: #a6dca3;
+  //box-shadow: 10px 10px 0px #e8e3e7;
+}
+
+.puzzle-left-lower-left {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  top: 50%;
+  left: -8%;
+  transform: translateY(-50%);
+  border-left-color: transparent;
+  background-color: #000000;
+}
+
+.puzzle-left-lower-bottom {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  left: 50%;
+  bottom: -8%;
+  transform: translateX(-50%);
+  border-bottom-color: transparent;
+  background-color: #000000;
+}
+
+.puzzle-left-lower-bottom::before {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #e8e3e7;
+  //content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  border-bottom: 2px solid #e8e3e7;
+}
+
+.puzzle-left-lower-bottom::after {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #000000;
+  //content: "";
+  position: absolute;
+  bottom: -90%;
+  left: 50%;
+}
+
+.puzzle-left-lower-top {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  top: -8%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: transparent;
+  background-color: #000000;
+}
+
+.puzzle-right-lower-right {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  top: 50%;
+  right: -28%;
+  transform: translateY(-50%);
+  border-left-color: transparent;
+  background-color: #ffcaec;
+ // box-shadow: 10px 10px 0px #e8e3e7;
+}
+
+.puzzle-right-lower-left {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  top: 50%;
+  left: -8%;
+  transform: translateY(-50%);
+  border-left-color: transparent;
+  background-color: #000000;
+}
+
+.puzzle-right-lower-top {
+  height: 30%;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 50%;
+  top: -8%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: transparent;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 900px) {
+
+  .bubble {
+    position: relative;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    width: 450px;
+    background: #fff;
+    border-radius: 145px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+  }
+
+  .bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 50px;
+    bottom: -24px;
+  }
+
+  .bubble2 {
+    position: relative;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    width: 280px;
+    background: #fff;
+    border-radius: 150px;
+    padding: 24px;
+    margin-top: 15px;
+    text-align: center;
+    color: #000;
+    float: right;
+  }
+
+  .bubble2-bottom-right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 24px solid #fff;
+    border-left: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    right: 50px;
+    bottom: -24px;
+  }
+
+  .bubble3 {
+    position: relative;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    width: 200px;
+    background: #fff;
+    border-radius: 145px;
+    padding: 24px;
+    margin-top: 100px;
+    text-align: center;
+    color: #000;
+  }
+
+  .bubble3-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 50px;
+    bottom: -24px;
+    }
+
+    .puzzle {
+      height: 500px;
+      width: 500px;
+      margin: auto;
+      transform: translateY(70%);
+      transform: scale(1);
+      top: 50%;
+      left: 50%;
+    }
+}
+
+a {
+  color: #fefefe;
+}
+
+a visited {
+  color: #fefefe;
+}
+
+.link {
+  position: absolute;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Calibri';
+  font-style: normal;
+  bottom: 0px;
+}
