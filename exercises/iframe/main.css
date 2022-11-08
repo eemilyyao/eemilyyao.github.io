@@ -1,0 +1,13 @@
+body {
+background-color: #fefefe;
+padding-top: 10vw;
+}
+
+.size {
+  width: 700px;
+  height: 450px;
+}
+
+.wrap {
+  display: inline-flex;
+}
