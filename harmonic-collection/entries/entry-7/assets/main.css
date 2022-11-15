@@ -58,6 +58,15 @@ a visited {
   text-decoration: none;
 }
 
+.link {
+  position: relative;
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 12px;
+  color: #000000;
+  padding-top: 500px;
+}
+
 @media screen and (max-width: 1000px) {
 
   .bigtext {
