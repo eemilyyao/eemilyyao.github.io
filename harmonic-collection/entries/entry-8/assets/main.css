@@ -1,0 +1,138 @@
+body {
+  padding: 200px;
+  overflow-x: hidden;
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+
+section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
+
+.maintext {
+  text-align: left;
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 35px;
+  color: #000000;
+  width: 620px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+div {
+}
+
+.second {
+  max-height: 100vh;
+}
+.toobig {
+  width: 400px;
+  height: auto;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.perfect {
+  width: 400px;
+  height: auto;
+  float: right;
+}
+.agnes {
+  width: 400px;
+  height: auto;
+  float: left;
+}
+
+#scissors {
+  transform: scale(15%);
+  transform-origin: top left;
+  position: absolute;
+  left: 800px;
+}
+
+#scissors:hover {
+  cursor: pointer;
+  transform-origin: top left;
+}
+
+#scissors:active {
+  translate: 600px;
+  transition-duration: 4s;
+}
+
+#scissors:active ~ .shirt2 {
+  transform:translateY(150px);
+  transition-duration: 3s;
+  transition-delay: 0.75s;
+}
+
+.shirt1 {
+  z-index: -1;
+  width: 700px;
+  height: auto;
+  position: absolute;
+  top: 1070px;
+  left: 900px;
+}
+
+.shirt2 {
+  z-index: -2;
+  width: 585px;
+  height: auto;
+  position: absolute;
+  top: 1200px;
+  left: 1041px;
+}
+
+@media screen and (max-width: 1000px) {
+
+.maintext {
+  font-size: 20px;
+}
+
+.toobig {
+  width: 300px;
+  height: auto;
+}
+
+.agnes {
+  transform: scale(70%);
+  transform-origin: top left;
+  position: absolute;
+  top: 300px;
+}
+}
+
+.link {
+  position: relative;
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 12px;
+  color: #000000;
+  padding-top: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a: visited {
+  text-decoration: none;
+}
