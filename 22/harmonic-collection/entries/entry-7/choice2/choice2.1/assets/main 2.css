@@ -1,0 +1,67 @@
+body {
+  background-color: #fefefe;
+  padding-top: 8vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+@font-face {
+    font-family: 'Buttershine';
+    src: url('Buttershine.otf') format('opentype');
+}
+
+.bigtext {
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 45px;
+  color: #000000;
+}
+
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: auto;
+  padding-top: 40px;
+}
+
+.goback {
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 25px;
+  color: #000000;
+  padding-top: 30px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .bigtext {
+    font-size: 30px;
+  }
+
+  .imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+  }
+
+  .goback {
+    text-align: center;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 15px;
+    color: #000000;
+  }
+}
