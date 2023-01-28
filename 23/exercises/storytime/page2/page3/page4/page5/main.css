@@ -1,0 +1,104 @@
+img {
+
+
+  /* Full height */
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: absolute
+  }
+
+.position{
+  margin-left: 300px;
+  margin-right: 100px;
+}
+
+.emily {
+  position: relative;
+  width: 800px;
+  padding-top: 250px;
+  left:-50px;
+
+}
+button {
+  background-color: red;
+  border: 2pt black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  margin-left: 40px;
+}
+
+.goose {
+  width: 600px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.fam {
+  width: 600px;
+  position: relative;
+  top: -30px;
+}
+
+.title {
+  font-size: 40pt;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  line-height: 2.5;
+}
+
+ul {
+  list-style: none;
+}
+
+.text {
+  font-size: 25pt;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+}
+
+.name {
+  font-size: 60pt;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  line-height: 2.0;
+  color: #39ff14;
+}
+
+
+@font-face {
+    font-family: 'Bake';
+    src: url(fonts/Bake.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Cook';
+    src: url(fonts/cook.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Read';
+    src: url(fonts/read.otf) format('opentype');
+}
+
+
+.bake {
+  font-family: 'Bake';
+  color: #c68958;
+}
+
+.cook {
+  font-family: 'Cook';
+  color: #be1923;
+}
+
+.read {
+  font-family: 'Read';
+  color: #006400;
+}

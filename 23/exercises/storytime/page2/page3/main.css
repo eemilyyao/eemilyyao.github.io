@@ -1,0 +1,40 @@
+html { 
+  background: url(imgs/word.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  margin-left: 100px;
+  margin-top: 300px;
+  margin-right: 100px;
+}
+
+button {
+  background-color: red;
+  border: 2pt black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  margin-left: 40px;
+}
+
+.title {
+  font-size: 30pt;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+ul {
+  list-style: none;
+}
+
+.text {
+  font-size: 25pt;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+}
