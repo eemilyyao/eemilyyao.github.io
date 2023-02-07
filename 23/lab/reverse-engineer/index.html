@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>html structure analysis</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Adds: an internal stylesheet. -->
+    <style>
+      section { margin-top: 120px; }
+      #table-of-contents { margin: 80px 0; }
+      .anchor-offset { scroll-margin-top: 40px; }
+      .grid-col-2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="big">
+      Core 2 Interaction: Lab –&nbsp;<em>Week 2: HTML Structure Analysis</em>
+    </header>
+    <section id="table-of-contents">
+      <ul>
+        <li><a href="#screenshot">Screenshot ↓</a></li>
+        <li><a href="#analysis">Analysis ↓</a></li>
+        <li><a href="#questions">Questions ↓</a></li>
+      </ul>
+    </section>
+    <section id="screenshot">
+      <h2>Screenshot</h2>
+      <img src="imgs/screenshot.png" alt="screenshot">
+    </section>
+    <section id="analysis">
+      <h2>Analysis</h2>
+      <div class="grid-col-2">
+        <div>
+          <pre id="analysis--simplified-html">
+          body.theme-loaded custom-cursor-enabled
+            header.site-header shrig-hand
+              div.theming
+              div.site-header__contents
+              nav.main-nav
+            main
+              div.sprig-component
+                div.container
+                div.filter 
+                div.container container--lg grid grid-align-centre
+
+                  < !-- BEGIN .post-item -->
+                  a.card col-12 col-sm-6 col-md-4 card--tooltip-on
+                    img
+                  < !-- END .post-item -->
+
+                div.container container--lg
+            footer.site-footer container
+            div.lightboxOverlay
+            div.lightbox
+              div.lb-outerContainer
+              div.lb-dataContainer
+          </pre>
+        </div>
+        <div id="analysis--text">
+          <h3>
+            <a href="https://davidshrigley.com/colour-works">David Shrigley</a>
+          </h3>
+          <p>
+            The 
+            <code>body.theme-loaded custom-cursor-enabled</code>
+             loads the theme (background color and fonts), and changes the user's cursor to the 'Shrigley' hand. The entire page it highlighted when I hover on this element.
+          </p>
+          <p>
+            <code>header.site-header shrig-hand</code>
+             holds all the contents in the header. This includes Shrigley's name at the top and all the navigation buttons for social media and homepage.
+          </p>
+          <p>
+            Within 
+            <code>main</code>, there are containers telling how each post should be displayed and aligned on the page in a grid format. The 
+            <code>img</code>
+             is placed inside the link (
+            <code>a</code>
+            ) in order to lead the user to a seperate page about the work when clicked.
+          </p>
+          <p>
+            Inside the 
+            <code>footer.site-footer container</code>
+             there are 'lightboxes' which I could not figure out the purpose for on the site itself. However, upon further research, it is a window overlay that covers some of the page's content. Often used for the header or footer so the scrolling content disappears underneath.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="analysis--questions">
+      <h2>Questions</h2>
+      <p>Why do some elements have both <code>id</code> and <code>class</code>? and just interested in what some elements like <code>data-tippy-content</code> and <code>aria-labelledby</code> does.
+      </p>
+    </section>
+  </body>
+</html>
