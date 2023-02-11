@@ -1,0 +1,35 @@
+body {
+  background: #FF98D0;
+}
+
+.top {
+  display: flex;
+  overflow: hidden;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+}
+
+.bottom {
+  display: flex;
+  overflow: hidden;
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+}
+
+.topborder {
+  width: 6rem;
+  height: 3rem;
+  background-color: #fefefe;
+  border-radius: 0 0 10rem 10rem;
+}
+
+.bottomborder {
+  width: 6rem;
+  height: 3rem;
+  background-color: #fefefe;
+  border-radius: 10rem 10rem 0 0;
+}
