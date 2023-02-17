@@ -8,6 +8,7 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .top {
@@ -80,7 +81,7 @@ body {
   font-size: 50px;
   line-height: 70px;
   letter-spacing: 0.18em;
-  padding-top: 1vw;
+  padding-top: 0.5vw;
   color: #FFFFFF;
   left: ;
 }
