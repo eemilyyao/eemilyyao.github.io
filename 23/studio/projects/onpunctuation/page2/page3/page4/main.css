@@ -19,15 +19,15 @@ body {
   display: flex;
 }
 
-.flower:hover {
+.small:hover {
   color: #C6FE7F;
 }
 
-.heart:hover {
+.medium:hover {
   color: #C6FE7F;
 }
 
-.star:hover {
+.big:hover {
   color: #C6FE7F;
 }
 

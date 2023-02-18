@@ -1,35 +1,27 @@
 
-function turnOnLight() {
-  console.log("!");
+function makeBig() {
+  var punctuations = document.querySelectorAll('.comma');
+  punctuations.forEach((element) => {
+    console.log(element)
+
+    element.style.fontSize = "100px"
+  });
 }
 
-function swapText() {
-  text.innerHTML = " ";
-  text.innerHTML = "So now to come to the real question of punctuation✿ periods✿ commas✿ colons✿ semi-colons and capitals and small letters✿ <br><br>I have had a long and complicated life with all these✿ <br><br>Let us begin with these I use the least first and these are colons and semi-colons✿ one might add to these commas✿<br><br>When I first began writing✿ I felt that writing should go on✿ I still do feel that it should go on but when I first began writing I was completely possessed by the necessity that writing should go on and on and if writing should go on what had colons and commas to do with it✿ what had periods to do with it what had small letters and capitals to do with it to do with writing going on which was at that time the most profound need I had in connection with writing✿ What had colons and semi-colons to do with it what had commas to do with it what had periods to do with it✿<br><br>What had periods to do with it✿ Inevitably no matter how completely I had to have writing go on✿ physically one had to again and again stop sometime and if one had to again and again stop sometime and if one had to again and again stop some time then periods had to exist✿ Beside I had always like the look of periods and I liked what they did✿ Stopping sometime did not really keep one from going on✿ it was nothing that interfered✿ it was only something that happened✿ and as it happened as a perfectly natural happening✿ I did not believe in periods and I used them✿ I really never stopped using them✿<br><br>Beside that periods might later come to have a life of their own to commence breaking up things in arbitrary ways✿ that has happened lately with me in a poem I have written called Winning His Way✿ later I will read you a little of it✿ By the time I had written this poem about three years ago periods had come to have for me completely a life of their own✿ They could begin to act as they thought best and one might interrupt one’s writing with them that is not really interrupt one’s writing with them but one could come to stop arbitrarily stop at times in one’s writing and so they could be used and you could use them Periods could come to exist in this way and they could come in this way to have a life of their own✿ They did not serve you in any servile way as commas and colons and semi-colons do✿ Yes you do feel what I mean✿<br><br><br><br><br><br>";
+function makeMedium() {
+  var punctuations = document.querySelectorAll('.comma');
+  punctuations.forEach((element) => {
+    console.log(element)
+
+    element.style.fontSize = "50px"
+  });
 }
 
-function swapText2() {
-  text.innerHTML = " ";
-  text.innerHTML = "So now to come to the real question of punctuation♥ periods♥ commas♥ colons♥ semi-colons and capitals and small letters♥ <br><br>I have had a long and complicated life with all these♥ <br><br>Let us begin with these I use the least first and these are colons and semi-colons♥ one might add to these commas♥<br><br>When I first began writing♥ I felt that writing should go on♥ I still do feel that it should go on but when I first began writing I was completely possessed by the necessity that writing should go on and on and if writing should go on what had colons and commas to do with it♥ what had periods to do with it what had small letters and capitals to do with it to do with writing going on which was at that time the most profound need I had in connection with writing♥ What had colons and semi-colons to do with it what had commas to do with it what had periods to do with it♥<br><br>What had periods to do with it♥ Inevitably no matter how completely I had to have writing go on♥ physically one had to again and again stop sometime and if one had to again and again stop sometime and if one had to again and again stop some time then periods had to exist♥ Beside I had always like the look of periods and I liked what they did♥ Stopping sometime did not really keep one from going on♥ it was nothing that interfered♥ it was only something that happened♥ and as it happened as a perfectly natural happening♥ I did not believe in periods and I used them♥ I really never stopped using them♥<br><br>Beside that periods might later come to have a life of their own to commence breaking up things in arbitrary ways♥ that has happened lately with me in a poem I have written called Winning His Way♥ later I will read you a little of it♥ By the time I had written this poem about three years ago periods had come to have for me completely a life of their own♥ They could begin to act as they thought best and one might interrupt one’s writing with them that is not really interrupt one’s writing with them but one could come to stop arbitrarily stop at times in one’s writing and so they could be used and you could use them Periods could come to exist in this way and they could come in this way to have a life of their own♥ They did not serve you in any servile way as commas and colons and semi-colons do♥ Yes you do feel what I mean♥<br><br><br><br><br><br>"
+function makeSmall() {
+  var punctuations = document.querySelectorAll('.comma');
+  punctuations.forEach((element) => {
+    console.log(element)
+
+    element.style.fontSize = "10px"
+  });
 }
-
-function swapText3() {
-  text.innerHTML = " ";
-  text.innerHTML = "So now to come to the real question of punctuation★ periods★ commas★ colons★ semi-colons and capitals and small letters★ <br><br>I have had a long and complicated life with all these★ <br><br>Let us begin with these I use the least first and these are colons and semi-colons★ one might add to these commas★<br><br>When I first began writing★ I felt that writing should go on★ I still do feel that it should go on but when I first began writing I was completely possessed by the necessity that writing should go on and on and if writing should go on what had colons and commas to do with it★ what had periods to do with it what had small letters and capitals to do with it to do with writing going on which was at that time the most profound need I had in connection with writing★ What had colons and semi-colons to do with it what had commas to do with it what had periods to do with it★<br><br>What had periods to do with it★ Inevitably no matter how completely I had to have writing go on★ physically one had to again and again stop sometime and if one had to again and again stop sometime and if one had to again and again stop some time then periods had to exist★ Beside I had always like the look of periods and I liked what they did★ Stopping sometime did not really keep one from going on★ it was nothing that interfered★ it was only something that happened★ and as it happened as a perfectly natural happening★ I did not believe in periods and I used them★ I really never stopped using them★<br><br>Beside that periods might later come to have a life of their own to commence breaking up things in arbitrary ways★ that has happened lately with me in a poem I have written called Winning His Way★ later I will read you a little of it★ By the time I had written this poem about three years ago periods had come to have for me completely a life of their own★ They could begin to act as they thought best and one might interrupt one’s writing with them that is not really interrupt one’s writing with them but one could come to stop arbitrarily stop at times in one’s writing and so they could be used and you could use them Periods could come to exist in this way and they could come in this way to have a life of their own★ They did not serve you in any servile way as commas and colons and semi-colons do★ Yes you do feel what I mean★<br><br><br><br><br><br>"
-}
-
-let button1 = document.querySelector(".small");
-
-let button2 = document.querySelector(".medium");
-
-let button3 = document.querySelector(".big");
-
-let text = document.querySelector(".text");
-
-
-
-
-button1.addEventListener("click", swapText);
-button2.addEventListener("click", swapText2);
-button3.addEventListener("click", swapText3);
-

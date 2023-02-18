@@ -27,8 +27,6 @@ let button3 = document.querySelector(".star");
 let text = document.querySelector(".text");
 
 
-
-
 button1.addEventListener("click", swapText);
 button2.addEventListener("click", swapText2);
 button3.addEventListener("click", swapText3);
