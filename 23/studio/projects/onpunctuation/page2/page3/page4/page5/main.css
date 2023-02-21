@@ -215,7 +215,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   body {
-    max-width: 768px;
+    max-width: 1024px;
     overflow-x: hidden;
   }
 
@@ -241,11 +241,11 @@ body {
     z-index: 1;
     position: absolute;
     background: linear-gradient(transparent, #Fefefe);
-    margin: 0 1vw 0 1vw;
+    margin: 0 1vw 5vh 3vw;
     color: #FF98D0;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    width: 58vw;
-    font-size: 50px;
+    width: 90vw;
+    font-size: 70px;
     justify-content: space-around;
     display: flex;
   }
@@ -255,45 +255,38 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 30px;
     letter-spacing: 0.1em;
-    width: 58vw;
+    width: 90vw;
     overflow: scroll;
     color: #fefefe;
-    margin: 10vh 1vw 10vh 1vw;
+    margin: 5vh 1vw 5vh 3vw;
     overflow-x: hidden;
     padding-top: 40px;
   }
 
-  .next {
-    width: 62px;
-    height: 62px;
-    background: radial-gradient( #FF98D0 20%, transparent, transparent);
-    border-radius: 50%;
-    position: relative;
-    display: block;
-    top: 7px;
-  }
+ .next {
+  width: 130px;
+  height: 120px;
+  background: radial-gradient( #FF98D0 20%, transparent, transparent);
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -0.5vh;
+  transform: scale(0.8);
+}
 
-  .next::after {
-    content: "";
-    position: absolute;
-    left: 34%;
-    top: 25%;
-    -webkit-transform: translateX(-40%) translateY(-50%);
-    transform: translateX(-40%) translateY(-50%);
-    transform-origin: center center;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 25px solid #fefefe;
-    z-index: 100;
-    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transform: scale(0.8);
-  }
+.back {
+  width: 130px;
+  height: 120px;
+  background: radial-gradient( #FF98D0 20%, transparent, transparent);
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -0.5vh;
+  transform: scale(0.8);
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -320,15 +313,38 @@ body {
   width: 100%; 
   }
 
+    body {
+    max-width: 1024px;
+    overflow-x: hidden;
+  }
+
+  .top {
+    top: -20px;
+    display: flex;
+  overflow-x: hidden;
+  position: fixed; 
+  left: 0;
+  width: 100%; 
+  }
+
+  .bottom {
+    bottom: -20px;
+    display: flex;
+  overflow-x: hidden;
+  position: fixed; 
+  left: 0;
+  width: 100%; 
+  }
+
   .button {
     z-index: 1;
     position: absolute;
     background: linear-gradient(transparent, #Fefefe);
-    margin: 0;
+    margin: 0 1vw 5vh 3vw;
     color: #FF98D0;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    width: 58vw;
-    font-size: 40px;
+    width: 90vw;
+    font-size: 70px;
     justify-content: space-around;
     display: flex;
   }
@@ -339,44 +355,37 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 25px;
     letter-spacing: 0.1em;
-    width: 58vw;
+    width: 90vw;
     overflow: scroll;
     color: #fefefe;
-    margin: 10vh 0vw 10vh 0vw;
+    margin: 5vh 1vw 5vh 3vw;
     overflow-x: hidden;
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
-  .next {
-    width: 52px;
-    height: 52px;
-    background: radial-gradient( #FF98D0 20%, transparent, transparent);
-    border-radius: 50%;
-    position: relative;
-    display: block;
-    top: 4px;
-  }
+ .next {
+  width: 130px;
+  height: 120px;
+  background: radial-gradient( #FF98D0 20%, transparent, transparent);
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -0.5vh;
+  transform: scale(0.8);
+}
 
-  .next::after {
-    content: "";
-    position: absolute;
-    left: 30%;
-    top: 20%;
-    -webkit-transform: translateX(-40%) translateY(-50%);
-    transform: translateX(-40%) translateY(-50%);
-    transform-origin: center center;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 25px solid #fefefe;
-    z-index: 100;
-    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transform: scale(0.6);
-  }
+.back {
+  width: 130px;
+  height: 120px;
+  background: radial-gradient( #FF98D0 20%, transparent, transparent);
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -0.5vh;
+  transform: scale(0.8);
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -408,13 +417,14 @@ body {
     z-index: 1;
     position: absolute;
     background: linear-gradient(transparent, #Fefefe);
-    margin: 0;
+    margin: 0 1vw 3vh 3vw;
     color: #FF98D0;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    width: 58vw;
-    font-size: 30px;
+    width: 90vw;
+    font-size: 60px;
     justify-content: space-around;
     display: flex;
+    padding-top: 20px;
   }
 
   .text {
@@ -423,44 +433,37 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 22px;
     letter-spacing: 0.1em;
-    width: 58vw;
+    width: 90vw;
     overflow: scroll;
     color: #fefefe;
-    margin: 10vh 0vw 10vh 0vw;
+    margin: 5vh 1vw 5vh 3vw;
     overflow-x: hidden;
-    padding-top: 23px;
+    padding-top: 40px;
   }
 
-  .next {
-    width: 43px;
-    height: 43px;
-    background: radial-gradient( #FF98D0 20%, transparent, transparent);
-    border-radius: 50%;
-    position: relative;
-    display: block;
-    top: 2px;
-  }
+ .next {
+  width: 130px;
+  height: 120px;
+  background: radial-gradient( #FF98D0 20%, transparent, transparent);
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -1.5vh;
+  transform: scale(0.6);
+}
 
-  .next::after {
-    content: "";
-    position: absolute;
-    left: 25%;
-    top: 15%;
-    -webkit-transform: translateX(-40%) translateY(-50%);
-    transform: translateX(-40%) translateY(-50%);
-    transform-origin: center center;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 25px solid #fefefe;
-    z-index: 100;
-    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transform: scale(0.5);
-  }
+.back {
+  width: 130px;
+  height: 120px;
+  background: radial-gradient( #FF98D0 20%, transparent, transparent);
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -1.5vh;
+  transform: scale(0.6);
+}
 
   ::-webkit-scrollbar {
   width: 0px;
@@ -482,109 +485,3 @@ body {
   background: none;
 }
 }
-
-@media screen and (max-width: 320px) {
-  
-  body {
-    max-width: 320px;
-    overflow-x: hidden;
-  }
-
-  .top {
-    top: -40px;
-    display: flex;
-  overflow-x: hidden;
-  position: fixed; 
-  left: 0;
-  width: 100%; 
-  }
-
-  .bottom {
-    bottom: -40px;
-    display: flex;
-  overflow-x: hidden;
-  position: fixed; 
-  left: 0;
-  width: 100%; 
-  }
-
-  .button {
-    z-index: 1;
-    position: absolute;
-    background: linear-gradient(transparent, #Fefefe);
-    margin: 0;
-    color: #FF98D0;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    width: 55vw;
-    font-size: 30px;
-    justify-content: space-around;
-    display: flex;
-  }
-
-  .text {
-    z-index: 0;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.1em;
-    width: 55vw;
-    overflow: scroll;
-    color: #fefefe;
-    margin: 10vh 0vw 10vh 0vw;
-    overflow-x: hidden;
-    padding-top: 18px;
-  }
-
-  .next {
-    width: 43px;
-    height: 43px;
-    background: radial-gradient( #FF98D0 20%, transparent, transparent);
-    border-radius: 50%;
-    position: relative;
-    display: block;
-    top: 2px;
-  }
-
-  .next::after {
-    content: "";
-    position: absolute;
-    left: 25%;
-    top: 15%;
-    -webkit-transform: translateX(-40%) translateY(-50%);
-    transform: translateX(-40%) translateY(-50%);
-    transform-origin: center center;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 25px solid #fefefe;
-    z-index: 100;
-    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transform: scale(0.5);
-  }
-
-  ::-webkit-scrollbar {
-  width: 0px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background:none;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: none;
-  border-radius: none;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: none;
-}
-
-}
-
