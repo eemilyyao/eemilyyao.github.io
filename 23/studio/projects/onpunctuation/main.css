@@ -1,7 +1,12 @@
 @font-face {
-  font-family: 'Kinkie';
-  src: url(kinkie.TTF) format('truetype');
+    font-family: 'Kinkie';
+    src: url('assets/Kinkie.woff2') format('woff2'),
+        url('assets/Kinkie.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
 
 body {
   background: radial-gradient(#C6FE7F 5%, #FF98D0 78%);

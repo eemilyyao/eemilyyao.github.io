@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'Kinkie';
-  src: url(kinkie.ttf) format('truetype');
+    font-family: 'Kinkie';
+    src: url('assets/Kinkie.woff2') format('woff2'),
+        url('assets/Kinkie.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
