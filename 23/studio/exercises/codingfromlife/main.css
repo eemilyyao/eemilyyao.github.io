@@ -7,17 +7,92 @@
 */
 
 
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+}
+
 body {
-  background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-height: 100%;
+    float: left;
+    width: 100%;
 }
 
 .frame {
+  z-index: -10;
   width: 95vw;
   height: 57vw;
   background: white;
   margin: 2.5vw auto;
   position: relative;
+  overflow: hidden;
 }
+
 
 /* Your CSS goes here */
 
+
+.table {
+    z-index: -2;
+    position: absolute;
+    background: #FFFDD0;
+    width: 800px;
+    height: 1700px;
+    transform: rotate(85deg);
+    top: -200px;
+    left: 37vw;
+}
+
+
+.pumpkin {
+    z-index: 1;
+    position: absolute;
+    background: #c04b2b;
+    border-radius: 50%;
+    width: 400px;
+    height: 360px;
+    top: 30vh;
+    left: 35vw;
+    transform: rotate(-15deg);
+}
+
+.top {
+  border-radius: 61% 39% 100% 0% / 54% 61% 39% 46%;
+  position: absolute;
+  background: #c04b2b;
+  width: 100px;
+  height: 90px;
+  top: -45px;
+  left: 185px;
+  transform: rotate(18deg)
+}
+
+.stalk {
+  z-index: -1;
+  border-radius: 43% 57% 56% 44% / 54% 61% 39% 46% ;
+  position: absolute;
+  background: #9b7752;
+  width: 40px;
+  height: 40px;
+  top: -65px;
+  left: 210px;
+  transform: rotate(18deg)
+}
+
+.leaf1 {
+  z-index: 0;
+  border-radius: 50% 50% 0% 100% / 30% 100% 0% 70%;
+  background: linear-gradient(#f03d29, #d66d4d);
+  position: absolute;
+  width: 280px;
+  height: 250px;
+  top: 600px;
+  left: 325px;
+  transform: rotate(-18deg);
+  opacity: 0.7;
+}
