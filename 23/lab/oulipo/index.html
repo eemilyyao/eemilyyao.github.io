@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
   </head>
-  <script>
+    <script>
+    function refreshPage(){
+    window.location.reload();
+} 
     // We haven't covered functions yet, so just use this for now.
     // Example usage: `randomItemFromArray(pastParticiples)`
     function randomItemFromArray(arr) {
@@ -18,56 +21,56 @@
 
     // 1a
     // Declare variable called `pastParticiples`. Initialize it with an Array of strings verbs in the past tense.
-    // REPLACE THIS COMMENT WITH CODE
+      let pastParticiples = ['bled', 'broke', 'caught', 'froze', 'grew', 'laid', 'paid', 'rode', 'spread', 'understood', 'sent', 'bred', 'stole', 'eaten', 'slept with', 'sucked', 'licked', 'saved', 'touched'];
 
     // 1b
     // Next, declare a variable called `pastParticiple`. Initialize it with `randomItemFromArray(pastParticiples)`.
-    // REPLACE THIS COMMENT WITH CODE
-
-
+      let pastParticiple = randomItemFromArray(pastParticiples);
 
     // 2a
     // Declare a variable called `nouns`. Initialize it with an Array of strings that are nouns.
-    // REPLACE THIS COMMENT WITH CODE
+    let nouns = ['salmon', 'ducks', 'geese', 'tuna', 'elephants', 'giraffes', 'ants', 'frogs', 'dragons', 'hippos', 'sardines', 'chickens', 'babies', 'owls', 'monkeys', 'birds', 'koalas', 'sharks', 'turtles', 'sloths'];
 
     // 2b
     // Next, declare variables `noun1`, `noun2` and `noun3`. Initialize them all using `randomItemFromArray(nouns)`.
-    // REPLACE THIS COMMENT WITH CODE
-
-
+    let noun1 = randomItemFromArray(nouns);
+    let noun2 = randomItemFromArray(nouns);
+    let noun3 = randomItemFromArray(nouns);
 
     // 3a
     // Declare a variable called `adjectives`. Initialize it with an Array of strings that are adjectives.
-    // REPLACE THIS COMMENT WITH CODE
+    let adjectives = ['buttered', 'fried', 'rubbery', 'edible', 'silky', 'sauteed', 'plump', 'greasy', 'smoked', 'crunchy', 'deep-fried', 'acidic', 'burnt', 'sour', 'spicy', 'raw', 'rotten', 'fermented', 'ripe'];
 
     // 3b
     // Next, declare variables `adj1`, `adj2` and `adj3`. Initialize them all using `randomItemFromArray(adjectives)`.
-    // REPLACE THIS COMMENT WITH CODE
-
+    let adj1 = randomItemFromArray(adjectives);  
+    let adj2 = randomItemFromArray(adjectives);  
+    let adj3 = randomItemFromArray(adjectives);  
 
 
     // Declaring a variable `poem` and intializing it with a string value.
     // Note: the `${}`. This acts as placeholders in the string of poem text.
     var poem = `
-      I have ${pastParticiple}
-      the ${noun1}
-      that were in
-      the ${noun2}
+      I have ${pastParticiple} <br>
+      the ${noun1} <br>
+      that were in <br>
+      the ${noun2} <br><br>
 
-      and which
-      you were probably
-      saving
-      for the ${noun3}
+      and which <br>
+      you were probably <br>
+      saving <br>
+      for the ${noun3} <br><br>
 
-      Forgive me
-      they were ${adj1}
-      so ${adj2}
-      and so ${adj3}
+      Forgive me <br>
+      they were ${adj1} <br>
+      so ${adj2} <br>
+      and so ${adj3} <br><br>
     `;
 
     // If you have declared and initialized all the variables correctly, you should see a new poem.
     // Open up the Chrome developer console (via Option+Command+I), navigate to the "Console" tab,
     // and you should see your new output.
+    document.write(poem);
     console.log(poem);
 
     const poemOriginal = `
@@ -87,5 +90,38 @@
       and so cold
     `;
   </script>
-  <body></body>
+  <style>
+   html {
+    background: linear-gradient(#82aef5, #f5b3ed);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;    
+    font-size: 25pt;
+    padding: 3em;
+    -webkit-text-fill-color: #fefefe;
+    min-height: 100vh;
+   }
+
+   button {
+    border: solid 8px #fefefe;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;    
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0em;
+    -webkit-text-fill-color: #fefefe;
+    -webkit-text-stroke-color: none;
+    -webkit-text-stroke-width: 0;
+    background-color: transparent;
+    cursor: pointer;
+   }
+
+   .container {
+    display: flex;  
+    justify-content: center;  
+   }
+  </style>
+  <body>
+    <div class="container">
+      <button type="change" onClick="refreshPage()">click here</button>
+    </div>
+  </body>
 </html>
