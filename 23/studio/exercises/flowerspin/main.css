@@ -1,0 +1,55 @@
+body {
+  background-color: #faf8d7;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: green;
+  font-size: 100px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.item {
+  text-align: center;
+  line-height: 15px;
+}
+
+@keyframes flowerSpin {
+  0% {
+    transform: rotate(0turn) scale(0);
+  }
+  70% {
+  	transform: rotate(0.70turn) scale(1.0);
+  }
+  100% {
+    transform: rotate(1turn) scale(1.0);
+  }
+}
+
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.flower {
+	height: 400px;
+	animation: flowerSpin  10s infinite, fade 10s ease-in infinite;
+	fill: #ff96c0;
+}
+
+
+.flower:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+  fill: #b0cdf5;
+}
