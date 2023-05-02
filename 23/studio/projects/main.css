@@ -1,0 +1,31 @@
+
+body {
+  margin: 150px;
+}
+
+.topics {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #000000;
+  font-size: 40pt;
+}
+
+.exercise {
+  letter-spacing: .2rem;
+  font-size: 100pt;
+  font-family: 'Inter', serif;
+}
+
+.name {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 40pt;
+}
+
+a {
+  color: #39ff14;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #39ff14;
+}
+
