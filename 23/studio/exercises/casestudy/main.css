@@ -1,0 +1,56 @@
+
+body {
+  margin: 50px;
+}
+
+.topics {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #000000;
+  font-size: 40pt;
+}
+
+.exercise {
+  letter-spacing: .2rem;
+  font-size: 30pt;
+  font-family: 'Inter', serif;
+}
+
+.name {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 40pt;
+  margin-bottom: 40px;
+}
+
+a {
+  color: #F3A8FF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #F3A8FF;
+}
+
+video {
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #AFFFA8;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+.text {
+  letter-spacing: .2rem;
+  font-size: 30pt;
+  font-family: 'Inter', serif;
+  padding-left: 20px;
+}
+
+.container {
+  display: inline-flex;
+}
