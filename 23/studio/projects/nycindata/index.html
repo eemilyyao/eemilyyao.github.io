@@ -1,27 +1,97 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Horizontal Scroll</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="assets/reset.css" rel="stylesheet">
-  <link href="main.css" rel="stylesheet">
-  <style>
-    #container {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    div {
-      margin-right: 20px;
-      border: 1px solid #ccc;
-      padding: 10px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>nyc in data</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div id="container"></div>
-  <script src="assets/script.js"></script>
+
+  <div class="heading"></div>
+
+  <div class="grid-container" id="data-container">
+    <!-- Data sets will be added here by JavaScript -->
+  </div>
+
+  <nav>
+      <ul>
+        <li><div class="text">What we are craving today?</div></li>
+        <li><a href="#African">African</a></li>
+        <li><a href="#American">American</a></li>
+        <li><a href="#Asian">Asian</a></li>
+        <li><a href="#Australian">Australian</a></li>
+        <li><a href="#Brazilian">Brazilian</a></li>
+        <li><a href="#Caribbean">Caribbean</a></li>
+        <li><a href="#Chinese">Chinese</a></li>
+        <li><a href="#European">European</a></li>
+        <li><a href="#Egyptian">Egyptian</a></li>
+        <li><a href="#English">English</a></li>
+        <li><a href="#Ethiopian">Ethiopian</a></li>
+        <li><a href="#Filipino">Filipino</a></li>
+        <li><a href="#French">French</a></li>
+        <li><a href="#German">German</a></li>
+        <li><a href="#Greek">Greek</a></li>
+        <li><a href="#Hawaiian">Hawaiian</a></li>
+        <li><a href="#Indian">Indian</a></li>
+        <li><a href="#Irish">Irish</a></li>
+        <li><a href="#Italian">Italian</a></li>
+        <li><a href="#Japanese">Japanese</a></li>
+        <li><a href="#Jewish-Kosher">Jewish-Kosher</a></li>
+        <li><a href="#Korean">Korean</a></li>
+        <li><a href="#Latin-American">Latin-American</a></li>
+        <li><a href="#Mediterranean">Mediterranean</a></li>
+        <li><a href="#Mexican">Mexican</a></li>
+        <li><a href="#Middle-Eastern">Middle-Eastern</a></li>
+        <li><a href="#Moroccan">Moroccan</a></li>
+        <li><a href="#Peruvian">Peruvian</a></li>
+        <li><a href="#Polish">Polish</a></li>
+        <li><a href="#Southeast-Asian">Southeast-Asian</a></li>
+        <li><a href="#Spanish">Spanish</a></li>
+        <li><a href="#Tex-Mex">Tex-Mex</a></li>
+        <li><a href="#Thai">Thai</a></li>
+        <li><a href="#Turkish">Turkish</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="African" class="cuisine-section"></section>
+      <section id="American" class="cuisine-section"></section>
+      <section id="Asian" class="cuisine-section"></section>
+      <section id="Australian" class="cuisine-section"></section>
+      <section id="Brazilian" class="cuisine-section"></section>
+      <section id="Caribbean" class="cuisine-section"></section>
+      <section id="Chinese" class="cuisine-section"></section>
+      <section id="European" class="cuisine-section"></section>
+      <section id="Egyptian" class="cuisine-section"></section>
+      <section id="English" class="cuisine-section"></section>
+      <section id="Ethiopian" class="cuisine-section"></section>
+      <section id="Filipino" class="cuisine-section"></section>
+      <section id="French"i class="cuisine-section"></section>
+      <section id="German" class="cuisine-section"></section>
+      <section id="Greek" class="cuisine-section"></section>
+      <section id="Hawaiian" class="cuisine-section"></section>
+      <section id="Indian" class="cuisine-section"></section>
+      <section id="Irish" class="cuisine-section"></section>
+      <section id="Italian" class="cuisine-section"></section>
+      <section id="Japanese" class="cuisine-section"></section>
+      <section id="Jewish-Kosher" class="cuisine-section"></section>
+      <section id="Korean" class="cuisine-section"></section>
+      <section id="Latin-American" class="cuisine-section"></section>
+      <section id="Mediterranean" class="cuisine-section"></section>
+      <section id="Mexican" class="cuisine-section"></section>
+      <section id="Middle-Eastern" class="cuisine-section"></section>
+      <section id="Moroccan" class="cuisine-section"></section>
+      <section id="Peruvian" class="cuisine-section"></section>
+      <section id="Polish" class="cuisine-section"></section>
+      <section id="Spanish" class="cuisine-section"></section>
+      <section id="Tex-Mex" class="cuisine-section"></section>
+      <section id="Thai" class="cuisine-section"></section>
+      <section id="Turkish" class="cuisine-section"></section>
+    </main>
+    <script src="assets/script.js"></script>
+    
 </body>
 </html>
+

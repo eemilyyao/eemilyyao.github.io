@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../nycindata"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "nycindata copy"
+	}
+}

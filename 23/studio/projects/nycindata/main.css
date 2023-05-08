@@ -1,31 +1,494 @@
 
-body {
-  margin: 150px;
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/inter.ttf') format('truetype');
+  font-style: normal;
 }
 
-.topics {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  color: #000000;
-  font-size: 40pt;
+@font-face {
+  font-family: 'Coco';
+  src: url('assets/cocogoose.ttf') format('truetype');
+  font-style: normal;
 }
 
-.exercise {
-  letter-spacing: .2rem;
-  font-size: 100pt;
-  font-family: 'Inter', serif;
+@font-face {
+  font-family: 'CocoL';
+  src: url('assets/cocogooselight.ttf') format('truetype');
+  font-style: normal;
 }
 
-.name {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  font-size: 40pt;
+@font-face {
+  font-family: 'CocoS';
+  src: url('assets/cocogooseslanted.ttf') format('truetype');
+  font-style: normal;
 }
 
-a {
-  color: #39ff14;
+.text {
+  font-family: 'CocoS';
+  padding-bottom: 20px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 400px;
+  margin-left: 300px;
+}
+
+.grid-item {
+  width: 300px;
+  height: 225px;
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column; /* add this line */
+  justify-content: left;
+  align-items: left;
+  font-family: 'Coco';
+  padding: 10px;
+  overflow-wrap: anywhere;
+  margin: 20px;
+}
+
+.dba {
+  font-family: 'Coco';
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  padding-left: 20px;
+  font-family: 'CocoL';
+  font-size: 25px;
+  overflow: scroll;
+}
+
+nav::-webkit-scrollbar {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+nav li {
+  margin: 10px 0;
+}
+
+nav li:hover {
+  font-family: 'CocoS';
+}
+
+nav a {
+  color: black;
   text-decoration: none;
+  font-size: 30px;
+
 }
 
-a:visited {
-  color: #39ff14;
+.cuisine-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.cuisine-description {
+  font-family: 'Inter';
+  font-size: 20px;
+  color: black;
+  justify-content: left;
+  align-items: left;
+  line-height: 2rem;
+}
+
+.cuisine-divider::after{
+  content: "\a";
+  white-space: pre;
+}
+
+@keyframes move-rat {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-1000vw);
+  }
+}
+
+.rat {
+  top: 70vh;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  left: 500px;
+  height: auto;
+  position: fixed;
+ z-index: 9999;
+}
+
+@keyframes move-mice {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-1000vw);
+  }
+}
+
+.mice {
+  top: 70vh;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: auto;
+  position: fixed;
+ z-index: 9999;
+}
+
+@keyframes move-roach {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-1000vw);
+  }
+}
+
+.roach {
+  top: 70vh;
+  left: 250px;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: auto;
+  position: fixed;
+  z-index: 9999;
+}
+
+.phone {
+  position: fixed;
+  top: 65vh;
+  height: auto;
+  z-index: 9999;
+  font-size: 40px;
+  font-family: 'Inter';
+  width: auto;
+  color: red;
+  background-color: white;
+  font-weight: bold;
+}
+
+@keyframes move-phone {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-1000vw);
+  }
+}
+
+.cuisine-African {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-African .cuisine-description {
+  color: white;
+}
+
+.cuisine-American {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-American .cuisine-description {
+  color: black;
+}
+
+.cuisine-Asian {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Asian .cuisine-description {
+  color: white;
+}
+
+.cuisine-Australian {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Australian .cuisine-description {
+  color: black;
+}
+
+.cuisine-Brazilian {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Brazilian .cuisine-description {
+  color: white;
+}
+
+.cuisine-Caribbean {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Caribbean .cuisine-description {
+  color: black;
+}
+
+.cuisine-Chinese {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Chinese .cuisine-description {
+  color: white;
+}
+
+.cuisine-European {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-European .cuisine-description {
+  color: white;
+}
+
+.cuisine-Egyptian {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Egyptian .cuisine-description {
+  color: white;
+}
+
+.cuisine-English {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-English .cuisine-description {
+  color: white;
+}
+
+.cuisine-Ethiopian {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Ethiopian .cuisine-description {
+  color: black;
+}
+
+.cuisine-Filipino {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Filipino .cuisine-description {
+  color: white;
+}
+
+.cuisine-French {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-French .cuisine-description {
+  color: black;
+}
+
+.cuisine-German {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-German .cuisine-description {
+  color: black;
+}
+
+.cuisine-Greek {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Greek .cuisine-description {
+  color: black;
+}
+
+.cuisine-Hawaiian {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Hawaiian .cuisine-description {
+  color: white;
+}
+
+.cuisine-Indian {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Indian .cuisine-description {
+  color: white;
+}
+
+.cuisine-Irish {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Irish .cuisine-description {
+  color: black;
+}
+
+.cuisine-Italian {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Italian .cuisine-description {
+  color: black;
+}
+
+.cuisine-Japanese {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Japanese .cuisine-description {
+  color: white;
+}
+
+.cuisine-Jewish-Kosher {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Jewish-Kosher .cuisine-description {
+  color: black;
+}
+
+.cuisine-Korean {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Korean .cuisine-description {
+  color: white;
+}
+
+.cuisine-Latin-American {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Latin-American .cuisine-description {
+  color: black;
+}
+
+.cuisine-Mediterranean {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Mediterranean .cuisine-description {
+  color: white;
+}
+
+.cuisine-Mexican {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Mexican .cuisine-description {
+  color: black;
+}
+.cuisine-Middle-Eastern {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Middle-Eastern .cuisine-description {
+  color: white;
+}
+
+.cuisine-Moroccan {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Moroccan .cuisine-description {
+  color: black;
+}
+
+.cuisine-Peruvian {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Peruvian .cuisine-description {
+  color: white;
+}
+
+.cuisine-Polish {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Polish .cuisine-description {
+  color: black;
+}
+.cuisine-Spanish {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Spanish .cuisine-description {
+  color: white;
+}
+
+.cuisine-Tex-Mex {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Tex-Mex .cuisine-description {
+  color: black;
+}
+
+.cuisine-Thai {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Thai .cuisine-description {
+  color: white;
+}
+
+.cuisine-Turkish {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Turkish .cuisine-description {
+  color: black;
 }
 
