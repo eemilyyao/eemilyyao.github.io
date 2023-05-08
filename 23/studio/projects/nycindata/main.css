@@ -67,7 +67,7 @@ nav {
   width: 250px;
   height: 100vh;
   background-color: white;
-  padding-left: 20px;
+  padding-left: 30px;
   font-family: 'CocoL';
   font-size: 25px;
   overflow: scroll;
@@ -84,7 +84,7 @@ nav ul {
 
 
 nav li {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 nav li:hover {
@@ -260,22 +260,13 @@ nav a {
   color: white;
 }
 
-.cuisine-European {
-  background-color: black;
-  color: white;
-}
-
-.cuisine-European .cuisine-description {
-  color: white;
-}
-
 .cuisine-Egyptian {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .cuisine-Egyptian .cuisine-description {
-  color: white;
+  color: black;
 }
 
 .cuisine-English {
@@ -296,22 +287,31 @@ nav a {
   color: black;
 }
 
-.cuisine-Filipino {
+.cuisine-European {
   background-color: black;
   color: white;
 }
 
-.cuisine-Filipino .cuisine-description {
+.cuisine-European .cuisine-description {
   color: white;
 }
 
-.cuisine-French {
+.cuisine-Filipino {
   background-color: white;
   color: black;
 }
 
-.cuisine-French .cuisine-description {
+.cuisine-Filipino .cuisine-description {
   color: black;
+}
+
+.cuisine-French {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-French .cuisine-description {
+  color: white;
 }
 
 .cuisine-German {
@@ -324,21 +324,21 @@ nav a {
 }
 
 .cuisine-Greek {
-  background-color: white;
-  color: black;
-}
-
-.cuisine-Greek .cuisine-description {
-  color: black;
-}
-
-.cuisine-Hawaiian {
   background-color: black;
   color: white;
 }
 
-.cuisine-Hawaiian .cuisine-description {
+.cuisine-Greek .cuisine-description {
   color: white;
+}
+
+.cuisine-Hawaiian {
+  background-color: white;
+  color: black;
+}
+
+.cuisine-Hawaiian .cuisine-description {
+  color: black;
 }
 
 .cuisine-Indian {
@@ -360,135 +360,135 @@ nav a {
 }
 
 .cuisine-Italian {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .cuisine-Italian .cuisine-description {
-  color: black;
+  color: white;
 }
 
 .cuisine-Japanese {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .cuisine-Japanese .cuisine-description {
+  color: black;
+}
+
+.cuisine-Jewish {
+  background-color: black;
   color: white;
 }
 
-.cuisine-Jewish-Kosher {
-  background-color: white;
-  color: black;
-}
-
-.cuisine-Jewish-Kosher .cuisine-description {
-  color: black;
+.cuisine-Jewish .cuisine-description {
+  color: white;
 }
 
 .cuisine-Korean {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .cuisine-Korean .cuisine-description {
-  color: white;
+  color: black;
 }
 
 .cuisine-Latin-American {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .cuisine-Latin-American .cuisine-description {
-  color: black;
+  color: white;
 }
 
 .cuisine-Mediterranean {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .cuisine-Mediterranean .cuisine-description {
-  color: white;
+  color: black;
 }
 
 .cuisine-Mexican {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .cuisine-Mexican .cuisine-description {
-  color: black;
+  color: white;
 }
 .cuisine-Middle-Eastern {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .cuisine-Middle-Eastern .cuisine-description {
-  color: white;
+  color: black;
 }
 
 .cuisine-Moroccan {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .cuisine-Moroccan .cuisine-description {
-  color: black;
+  color: white;
 }
 
 .cuisine-Peruvian {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .cuisine-Peruvian .cuisine-description {
-  color: white;
+  color: black;
 }
 
 .cuisine-Polish {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .cuisine-Polish .cuisine-description {
-  color: black;
+  color: white;
 }
 .cuisine-Spanish {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .cuisine-Spanish .cuisine-description {
-  color: white;
+  color: black;
 }
 
 .cuisine-Tex-Mex {
-  background-color: white;
-  color: black;
-}
-
-.cuisine-Tex-Mex .cuisine-description {
-  color: black;
-}
-
-.cuisine-Thai {
   background-color: black;
   color: white;
 }
 
-.cuisine-Thai .cuisine-description {
+.cuisine-Tex-Mex .cuisine-description {
   color: white;
 }
 
-.cuisine-Turkish {
+.cuisine-Thai {
   background-color: white;
   color: black;
 }
 
-.cuisine-Turkish .cuisine-description {
+.cuisine-Thai .cuisine-description {
   color: black;
+}
+
+.cuisine-Turkish {
+  background-color: black;
+  color: white;
+}
+
+.cuisine-Turkish .cuisine-description {
+  color: white;
 }
 
