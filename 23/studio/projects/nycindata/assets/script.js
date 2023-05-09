@@ -94,15 +94,15 @@ fetch('assets/collection.json')
           row.appendChild(square);
           container.appendChild(row);
       
-          if (item["VIOLATION DESCRIPTION"].toLowerCase().includes("rats")) { // add this condition
+          if (item["VIOLATION DESCRIPTION"].toLowerCase().includes("rats")) { 
             square.addEventListener("click", () => moveRat());
           }
 
-          if (item["VIOLATION DESCRIPTION"].toLowerCase().includes("mice")) { // add this condition
+          if (item["VIOLATION DESCRIPTION"].toLowerCase().includes("mice")) { 
             square.addEventListener("click", () => moveMice());
           }
 
-          if (item["VIOLATION DESCRIPTION"].toLowerCase().includes("roaches")) { // add this condition
+          if (item["VIOLATION DESCRIPTION"].toLowerCase().includes("roaches")) { 
             square.addEventListener("click", () => moveRoach());
           }
         }
