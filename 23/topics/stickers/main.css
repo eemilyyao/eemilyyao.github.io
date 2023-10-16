@@ -1,0 +1,410 @@
+:root {
+	--spacing: 1em;
+}
+
+@font-face {
+    font-family: 'Karrik';
+    src: url('assets/Karrik-Regular.otf') format('opentype');
+    font-style: normal;
+}
+
+/* CSS for spinning animation */
+.dragme.spin {
+    animation: spin-animation 1s infinite linear;
+}
+
+@keyframes spin-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* CSS for anticlockwise spinning effect */
+.dragme.spin2 {
+    animation: spin2-animation 4s infinite linear;
+}
+
+@keyframes spin2-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* CSS for jumping effect */
+.dragme.jump {
+    animation: jump-animation 0.5s alternate infinite;
+}
+
+@keyframes jump-animation {
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: -20px;
+    }
+}
+
+
+/* CSS for back and forth movement */
+.dragme.run {
+    animation: run-animation 2s infinite alternate;
+}
+
+@keyframes run-animation {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 50px); /* Adjust the distance for the desired width of the image */
+    }
+}
+
+/* CSS for fading effect */
+.dragme.fade {
+    animation: fade-animation 10s infinite alternate;
+}
+
+@keyframes fade-animation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+body {
+	font-family: sans-serif;
+	padding: var(--spacing);
+	padding-bottom: 33vh;
+	overflow-x: hidden;
+	background-color: #f8f8e5;
+}
+
+.footer {
+	z-index: 99999;
+	font-size: 40px;
+		font-family: sans-serif;
+		color: pink;
+		font-size: 50px;
+		padding: 0px;
+		margin-top: 0px;
+		width: 100%;
+  }
+
+.dragme {
+	width: 300px;
+	height: auto;
+	cursor: move;
+  }
+
+  .buttons {
+	background-color: transparent;
+	z-index: 9999;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin: 2vh auto; /* Add auto margin to horizontally center the element */
+  }
+
+  .parent-element {
+	text-align: center;
+  }
+  
+#image-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.dragme {
+	cursor: move;
+}
+
+#has-flower-button {
+	position: relative;
+	color: white;
+	background-color: #fc0373;
+	border: 5px solid transparent;
+	transition: .2s ease;
+	border-radius: 100px;
+	padding: 0px 30px;
+	font-size: 60px;
+}
+
+#has-flower-button:hover {
+	color: #fc0373;
+	background-color: white;
+	transform: scale(1.1);
+	border: 5px solid #fc0373;
+}
+
+#be-safe-button {
+	position: relative;
+	color: white;
+	background-color: #fc0373;
+	border: 5px solid transparent;
+	transition: .2s ease;
+	border-radius: 100px;
+	padding: 0px 30px;
+	font-size: 60px;
+}
+
+#be-safe-button:hover {
+	color: #fc0373;
+	background-color: white;
+	transform: scale(1.1);
+	border: 5px solid #fc0373;
+}
+
+#be-happy-button {
+	position: relative;
+	color: white;
+	background-color: #fc0373;
+	border: 5px solid transparent;
+	transition: .2s ease;
+	border-radius: 100px;
+	padding: 0px 30px;
+	font-size: 60px;
+}
+
+#be-happy-button:hover {
+	color: #fc0373;
+	background-color: white;
+	transform: scale(1.1);
+	border: 5px solid #fc0373;
+}
+
+.glow {
+	color: #111; 
+	z-index: 999;
+    background: #ff007f; 
+    box-shadow: 0 0 150px #ff007f; ;
+  }
+
+.description {
+	z-index: 999;
+	position: absolute;
+	width: 300px;
+	text-align: left;
+	line-height: 1.4em;
+	margin: 40px auto;
+	background-color: #fff;
+	border: 5px solid #fc0373;
+	border-radius: 30px;
+	font-family: sans-serif;
+	padding: 20px;
+	font-size: large;
+	color: #fc0373;
+}
+
+.clock {
+	z-index: 999;
+	position: absolute;
+	width: 300px;
+	text-align: left;
+	line-height: 1.4em;
+	margin: 40px auto;
+	background-color: #fff;
+	border: 5px solid #9D00FF;
+	border-radius: 30px;
+	font-family: sans-serif;
+	padding: 20px;
+	font-size: large;
+	color: #9D00FF;
+}
+
+.translation {
+	z-index: 999;
+	position: absolute;
+	width: 300px;
+	text-align: left;
+	line-height: 1.4em;
+	margin: 40px auto;
+	background-color: #fff;
+	border: 5px solid #C6518F;
+	border-radius: 30px;
+	font-family: sans-serif;
+	padding: 20px;
+	font-size: large;
+	color: #C6518F;
+}
+
+
+.description:before,
+.description:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+.clock:before,
+.clock:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+.speech:before {
+	left: 35px;
+	bottom: -50px;
+	border: 25px solid;
+	border-color: #fc0373 transparent transparent #fc0373;
+	transform: scale(0.80);
+}
+
+.speech:after {
+	left: 46px;
+	bottom: -30px;
+	border: 15px solid;
+	border-color: #fff transparent transparent #fff;
+	
+}
+
+.speech1:before {
+	left: 37px;
+	bottom: -50px;
+	border: 25px solid;
+	border-color: #9D00FF transparent transparent #9D00FF;
+	transform: scale(0.80) scaleX(-1) translate(-188px);
+}
+
+.speech1:after {
+	left: 46px;
+	bottom: -30px;
+	border: 15px solid;
+	border-color: #fff transparent transparent #fff;
+	transform: scaleX(-1) translate(-150px);
+}
+
+.translation:before,
+.translation:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+.speech2:before {
+	left: 37px;
+	bottom: -50px;
+	border: 25px solid;
+	border-color: #C6518F transparent transparent #C6518F;
+	transform: scale(0.80) scaleX(-1) translate(-188px);
+}
+
+.speech2:after {
+	left: 46px;
+	bottom: -30px;
+	border: 15px solid;
+	border-color: #fff transparent transparent #fff;
+	transform: scaleX(-1) translate(-150px);
+}
+
+@media (max-width: 767px) {
+
+	.parent-element {
+		text-align: left;
+		max-width: 767px;
+		position: fixed;
+	  }
+	
+	  .footer {
+		z-index: 99999;
+			font-family: sans-serif;
+			color: pink;
+			font-size: 10px;
+			padding: 0px;
+			margin-top: 0px;
+			width: 100%;
+	  }
+	
+	  #image-container {
+		overflow-x: scroll;
+		white-space: nowrap;
+	  }
+	
+	  #image-container img {
+		display: inline-block;
+		width: 100px;
+	  }
+	
+
+	.buttons {
+		background-color: transparent;
+		z-index: 9999;
+		position: fixed;
+		width: 100%;
+		display: inline;
+		justify-content: space-around;
+	  }
+
+	#has-flower-button {
+		position: relative;
+		color: white;
+		background-color: #fc0373;
+		border: 1px solid transparent;
+		transition: .2s ease;
+		border-radius: 100px;
+		padding: 0px 10px;
+		font-size: 30px;
+	}
+	
+	#has-flower-button:hover {
+		color: #fc0373;
+		background-color: white;
+		transform: scale(1.1);
+		border: 1px solid #fc0373;
+	}
+	
+	#be-safe-button {
+		position: relative;
+		color: white;
+		background-color: #fc0373;
+		border: 1px solid transparent;
+		transition: .2s ease;
+		border-radius: 100px;
+		padding: 0px 10px;
+		font-size: 30px;
+	}
+	
+	#be-safe-button:hover {
+		color: #fc0373;
+		background-color: white;
+		transform: scale(1.1);
+		border: 1px solid #fc0373;
+	}
+	
+	#be-happy-button {
+		position: relative;
+		color: white;
+		background-color: #fc0373;
+		border: 1px solid transparent;
+		transition: .2s ease;
+		border-radius: 100px;
+		padding: 0px 10px;
+		font-size: 30px;
+	}
+	
+	#be-happy-button:hover {
+		color: #fc0373;
+		background-color: white;
+		transform: scale(1.1);
+		border: 1px solid #fc0373;
+	}
+  }

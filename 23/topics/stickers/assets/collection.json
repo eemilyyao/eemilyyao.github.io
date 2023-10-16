@@ -1,0 +1,123 @@
+[
+  {
+    "img": "assets/img/29.JPG",
+    "action": "fade"
+  },
+  {
+    "img": "assets/img/1.JPG",
+    "action": "spin"
+  },
+  {
+    "img": "assets/img/2.JPG",
+    "action": "jump"
+  },
+  {
+    "img": "assets/img/3.JPG",
+    "action": "run"
+  },
+  {
+    "img": "assets/img/4.JPG",
+    "action": "spin2"
+  },
+  {
+    "img": "assets/img/5.JPG",
+    "action": "spin"
+  },
+  {
+    "img": "assets/img/6.JPG",
+    "action": "spin2"
+  },
+  {
+    "img": "assets/img/7.JPG",
+    "action": "spin"
+  },
+  {
+    "img": "assets/img/8.JPG",
+    "action": "run"
+  },
+  {
+    "img": "assets/img/9.JPG",
+    "action": "jump"
+  },
+  {
+    "img": "assets/img/10.JPG",
+    "action": "run"
+  },
+  {
+    "img": "assets/img/11.JPG",
+    "action": "run"
+  },
+  {
+    "img": "assets/img/12.JPG",
+    "action": "spin2"
+  },
+  {
+    "img": "assets/img/13.JPG",
+    "action": "spin"
+  },
+  {
+    "img": "assets/img/14.JPG",
+    "action": "jump"
+  },
+  {
+    "img": "assets/img/15.JPG",
+    "action": "run"
+  },
+  {
+    "img": "assets/img/16.JPG",
+    "action": "fade"
+  },
+  {
+    "img": "assets/img/17.JPG",
+    "action": "spin2"
+  },
+  {
+    "img": "assets/img/18.JPG",
+    "action": "fade"
+  },
+  {
+    "img": "assets/img/19.JPG",
+    "action": "jump"
+  },
+  {
+    "img": "assets/img/20.JPG",
+    "action": "jump"
+  },
+  {
+    "img": "assets/img/21.JPG",
+    "action": "run"
+  },
+  {
+    "img": "assets/img/22.JPG",
+    "action": "spin2"
+  },
+  {
+    "img": "assets/img/23.JPG",
+    "action": "fade"
+  },
+  {
+    "img": "assets/img/24.JPG",
+    "action": "spin"
+  },
+  {
+    "img": "assets/img/25.JPG",
+    "action": "run"
+  },
+  {
+    "img": "assets/img/26.JPG",
+    "action": "spin2"
+  },
+  {
+    "img": "assets/img/27.JPG",
+    "action": "jump"
+  },
+  {
+    "img": "assets/img/28.JPG",
+    "action": "fade"
+  },
+  {
+    "img": "assets/img/30.JPG",
+    "action": "spin2"
+  }
+  ]
+  
