@@ -30,12 +30,11 @@ a {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #000000;
   font-weight: normal;
-  font-size: 15pt;
-  top: 750px;
-  left: 1280px;
+  font-size: 20pt;
+  top: 20px;
+  left: 100px;
   position: absolute;
   z-index: 99;
-  text-decoration: none;
 }
 
 header {
@@ -307,7 +306,7 @@ header {
 
 .image7 {
   position: relative;
-  left: -1425px;
+  left: -1400px;
   top: -100px;
   overflow: hidden;
   width: 400px;
@@ -341,10 +340,10 @@ header {
 
 .image8 {
   position: relative;
-  left: -700px;
+  left: -1400px;
   top: -100px;
   overflow: hidden;
-  width: 200px;
+  width: 400px;
   height: auto;
 }
 
@@ -380,5 +379,5 @@ header {
 .image6,
 .image7,
 .image8 {
-  transform: scale(150%) translate(50px);
+  transform: scale(150%);
 }
