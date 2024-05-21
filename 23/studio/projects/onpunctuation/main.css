@@ -53,7 +53,7 @@ body {
   height: auto;
   position: absolute;
   left: 15vw;
-  top: 3vw;
+  top: 4vw;
 }
 
 .shootingstar {
@@ -61,12 +61,12 @@ body {
   height: auto;
   position: absolute;
   left: -2.6vw;
-  top: 14.5vw;
+  top: 15.5vw;
 }
 
 .title {
   width: 1006px;
-  height: 116px;
+  height: 100px;
   font-family: 'Kinkie';
   font-style: normal;
   font-weight: 700;
@@ -88,7 +88,6 @@ body {
   letter-spacing: 0.18em;
   padding-top: 0.5vw;
   color: #FFFFFF;
-  left: ;
 }
 
 .play {
