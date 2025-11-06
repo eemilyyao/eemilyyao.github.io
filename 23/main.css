@@ -1,29 +1,50 @@
-body {
-  margin: 100px;
-}
-
-.topics {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  color: #000000;
-  font-size: 40pt;
-}
-
-.storytime{
-  letter-spacing: .2rem;
-  font-size: 100pt;
-  font-family: 'Inter', serif;
-}
-
-.name {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  font-size: 40pt;
-}
-
-a {
-  color: #39ff14;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #39ff14;
-}
+@font-face {
+	font-family: 'Karrik';
+	src: url('assets/Karrik-Regular.otf') format('opentype');
+  }
+  
+  body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	cursor: pointer;
+	font-family: 'Karrik', sans-serif;
+  }
+  
+  /* the image centered and smaller */
+  #background-image {
+	background: url('Ccryingnyc_img.JPG') center center / contain no-repeat;
+	width: 50vw;    /* adjust size here */
+	height: 60vh;   /* adjust size here */
+	pointer-events: none; /* makes clicks pass through */
+  }
+  
+  .text-bubble {
+	position: absolute;
+	border-radius: 20px;
+	padding: 15px 20px;
+	max-width: 400px;
+	color: #000000;
+	font-size: 2rem;
+	line-height: 1.4em;
+	box-shadow: 0 0 20px rgba(173, 3, 252, 0.4);
+	animation: fadeInOut 3s ease forwards, pop 0.2s ease-out;
+  }
+  
+  @keyframes fadeInOut {
+	0% {opacity: 0;}
+	10% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {opacity: 0;}
+  }
+  
+  @keyframes pop {
+	0% {transform: scale(0.6) rotate(-2deg);}
+	100% {transform: scale(1) rotate(0deg);}
+  }
+  
